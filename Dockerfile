@@ -1,9 +1,6 @@
-FROM alpine:3.4
-
-RUN apk add --no-cache openjdk7-jre
+FROM openjdk:8u102-jdk
 
 COPY build/dynamodb_local_latest /tmp/dynamodb_local_latest
-
 WORKDIR /tmp/dynamodb_local_latest
 
 EXPOSE 8000
