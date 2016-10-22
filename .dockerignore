@@ -1,5 +1,3 @@
-build/*.tar.gz
-
 .gitignore
 
 Makefile

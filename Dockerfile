@@ -1,7 +1,7 @@
-FROM openjdk:8u102-jdk
+FROM openjdk:7-jre
 
-COPY build/dynamodb_local_latest /tmp/dynamodb_local_latest
-WORKDIR /tmp/dynamodb_local_latest
+ADD build/dynamodb_local.tar.gz /tmp/dynamodb_local
+WORKDIR /tmp/dynamodb_local
 
 EXPOSE 8000
 
